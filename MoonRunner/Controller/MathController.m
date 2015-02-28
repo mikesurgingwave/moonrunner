@@ -128,8 +128,8 @@ static const int idealSmoothReachSize = 33; // about 133 locations/mi
     
     // make array of all speeds, find slowest+fastest
     NSMutableArray *rawSpeeds = [NSMutableArray array];
-    double slowestSpeed = DBL_MAX;
-    double fastestSpeed = 0.0;
+    double slowestSpeed = 0.0;
+    double fastestSpeed = DBL_MAX;
     
     for (int i = 1; i < locations.count; i++) {
         Location *firstLoc = [locations objectAtIndex:(i-1)];
